@@ -1,0 +1,140 @@
+/* MISCELLANEOUS STUFF */
+* {
+    font-family: Helvetica;
+    color: rgb(249, 220, 92);
+}
+
+p {
+    font-family: Courier;
+    font-size: 25px;
+    color: rgb(70, 83, 98);
+}
+
+ul {
+    font-size: 25px;
+    display: inline-block;
+    text-align: left;
+}
+
+/* LINKS */
+#personal-information a {
+    color: rgb(237, 37, 78);
+}
+
+#personal-information a:hover {
+    color: rgb(70, 83, 98);
+}
+a:hover {
+    color: rgb(70, 83, 98);
+}
+
+/* HEADER */
+#self-portrait {
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+.header {
+    font-size: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(1, 25, 54);
+}
+
+/* MAIN CONTENT */
+#main-content {
+    margin-top: 300px;
+}
+
+section {
+    border-style: solid;
+    border-radius: 50px;
+    width: 75%;
+    padding: 25px;
+    margin: auto;
+
+}
+
+body {
+    background-color: rgb(1, 25, 54);
+}
+
+#personal-information {
+    display: block;
+    text-align: left;
+}
+
+#skills {
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(237, 37, 78);
+}
+
+h4 {
+    font-size: 25px;
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    display: none;
+}
+
+footer a {
+    padding: 10px;
+    color: rgb(237, 37, 78);
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 16px;
+    }
+
+    /* MAIN CONTENT */
+    #main-content {
+        margin-top: 350px;
+    }
+
+    #personal-information {
+        display: none;
+    }
+
+    section {
+        max-width: 100%;
+    }
+    
+    /* HEADER */
+    .header {
+        font-size: 25px;
+    }
+
+    .header img {
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+        display: inline;
+    }
+
+}
