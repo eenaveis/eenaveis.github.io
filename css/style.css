@@ -16,6 +16,10 @@ ul {
     text-align: left;
 }
 
+/* .container {
+    display: flex;
+} */
+
 /* LINKS */
 #personal-information a {
     color: rgb(237, 37, 78);
@@ -96,6 +100,7 @@ h4 {
 /* FOOTER */
 footer {
     display: none;
+    margin-left: 25%;
 }
 
 footer a {
@@ -106,11 +111,12 @@ footer a {
 @media only screen and (max-width: 600px) {
     p {
         font-size: 16px;
+        color: rgb(160, 165, 170);
     }
 
     /* MAIN CONTENT */
     #main-content {
-        margin-top: 350px;
+        margin-top: 0;
     }
 
     #personal-information {
@@ -124,6 +130,9 @@ footer a {
     /* HEADER */
     .header {
         font-size: 25px;
+        margin-top: 0;
+        padding-top: 0;
+        position: static;
     }
 
     .header img {
