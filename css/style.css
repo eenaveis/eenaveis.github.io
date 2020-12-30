@@ -36,6 +36,10 @@ h4 {
 }
 
 /* LINK STYLES */
+
+a {
+    text-decoration: none;
+}
 #personal-information a {
     color: rgb(237, 37, 78);
 }
@@ -43,8 +47,10 @@ h4 {
 #personal-information a:hover {
     color: rgb(70, 83, 98);
 }
+
 a:hover {
     color: rgb(70, 83, 98);
+    text-decoration: underline;
 }
 
 .github {
