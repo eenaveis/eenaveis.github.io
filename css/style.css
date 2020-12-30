@@ -1,11 +1,11 @@
 /* GLOBAL STYLES */
 * {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     color: rgb(249, 220, 92);
 }
 
 p {
-    font-family: Courier;
+    font-family: Courier, monospace, serif;
     font-size: 25px;
     color: rgb(70, 83, 98);
 }
