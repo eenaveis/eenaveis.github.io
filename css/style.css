@@ -116,6 +116,12 @@ footer a {
     color: rgb(237, 37, 78);
 }
 
+#skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /*
 MOBILE DEVICES*/
 
