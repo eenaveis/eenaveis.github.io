@@ -1,8 +1,3 @@
-/*
-SQL icon made by https://www.freepik.com from https://www.flaticon.com/
-*/
-
-
 /*==============================================================================
 Global Styles*/
 
@@ -210,6 +205,11 @@ Component Styles*/
     background-color: midnightblue;
 }
 
+#projects p {
+    margin: 25px auto;
+    width: 700px;
+}
+
 .button-view {
     display: flex;
     flex-direction: column;
@@ -298,6 +298,10 @@ Component Styles*/
 
     #projects {
         padding: 0 25px;
+    }
+
+    #projects p {
+        width: 100%;
     }
 
 }
