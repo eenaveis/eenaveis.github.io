@@ -2,98 +2,129 @@
 
 <html>
     <head>
-        <title>Emil Sievänen</title>
+        <meta charset="utf-8">
+        <title>Emil Sievänen | Junior Developer & Programmer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <link href="./css/style.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
     <body>
-        <div class="header">
-            <h1><img id="self-portrait" src="./img/portrait.jpg" alt="Emil Sievänen">Emil Sievänen</h1>
-        </div>
-        <div id="main-content" class="container">
-            <section>
-                <h2>Profile</h2>
-                <ul id="personal-information">
-                    <li><a href="https://en.wikipedia.org/wiki/Sein%C3%A4joki" target="_blank">Seinäjoki, Finland</a></li>
-                    <li><a href="https://fi.linkedin.com/in/sievanen" target="_blank">@LinkedIn</a></li>
-                    <li><a href="https://github.com/eenaveis" target="_blank">@GitHub</a></li>
+
+        <!-- HEADER -->
+        <header>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#story">The Story</a></li>
+                    <li><a href="#skills">The Skills</a></li>
+                    <li><a href="#projects">The Projects</a></li>
                 </ul>
-                <p>Jack of all trades. Currently developing my front-end skills and experimenting with the React library.
-                MSc in finance and strong foundations in data science. My favorite tools are R for data science
-                and React and Node.js for web development. I love building things and I am a sauna enthusiast.
-                </p>
-            </section>
+                <a id="contact-link" href="#contact">Contact</a>
+            </nav>
+        </header>
 
-            <br>
-
-            <section id="skills" class="container">
-                <h2>Skills</h2>
-                <div id="skills-wrapper">
-                    <div>
-                        <h3>Python</h3>
-                        <h3>R</h3>
-                        <h3>SQL</h3>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div>
-                        <h3>React</h3>
-                        <h3>Node.js</h3>
-                        <h3>HTML</h3>
-                        <h3>CSS</h3>
-
-
-                </div>
-                </div>
-            </section>
-
-            <br>
-
-            <section id="projects" class="container">
-                <h2>Projects</h2>
-                <div class="project-container">
-                    <h3>Web Development Projects</h3>
-                    <h4>
-                        <a class="project-link" href="https://evening-headland-38843.herokuapp.com/" target="_blank">Job Board</a> 
-                        <a class="github" href="https://github.com/eenaveis/job-board" target="_blank">@GitHub</a>
-                    </h4>
-                    <p>Web app for searching jobs. Built with <em>React</em>, showcasing some basic pagination, 
-                    popup windows and API calls. Uses the GitHub Jobs API to fetch the jobs data.
-                    </p>
-                    <h4>
-                        <a class="project-link" href="https://afternoon-coast-30164.herokuapp.com/" target="_blank">weatherApp</a> 
-                        <a class="github" href="https://github.com/eenaveis/weatherApp" target="_blank">@GitHub</a>
-                    </h4>
-                    <p>Mobile responsive site for searching current weather in major cities. 
-                    Implemented with Node.js/Express backend and vanilla JavaScript.
-                    </p>
-                </div>
-                <div class="project-container">
-                    <h3>Data Science Projects</h3>
-                    <h4>alpha_vantage_tools 0.2.0 
-                        <a class="github" href="https://github.com/eenaveis/alpha_vantage_tools" target="_blank">@GitHub</a>
-                    </h4>
-                    <p>Python package for retrieving stock market data from the Alpha Vantage API
-                     and storing it automatically into a SQL database. 
-                     The database is implemented with SQLite database.
-                    </p>
-                    <h4>
-                        <a class="project-link" href="notebooks/tuberculosis.html" target="_blank">Case Study - WHO Tuberculosis Data</a>
-                        <a class="github" href="https://github.com/eenaveis/who-tuberculosis" target="_blank">@GitHub</a>
-                    </h4>
-                    <p>Case study showcasing basic data analysis process from data cleaning
-                    to data visualization and modelling.
-                    </p>
-                </div>
-            </section>
+        <div id="main-image">
+            <div id="motivational">
+                <h1>Nothing is Impossible</h1>
+            </div>
         </div>
-        
-        <br>
 
-        <footer>
-            <a href="https://fi.linkedin.com/in/sievanen" target="_blank">@LinkedIn</a>
-            <a href="https://github.com/eenaveis" target="_blank">@GitHub</a>
-        </footer>
+        <!-- INTRODUCTION -->
+        <section id="intro">
+            <div class="container">
+                <img id="portrait" src="img/portrait.jpg">
+                <h2>Hi, I'm Emil. Nice to meet you.</h2>
+                <p>In the world of endless opportunities, I build beautiful
+                    websites and gain earth-shaking insights about data.</p>
+            </div>
+        </section>
+
+        <!-- STORY -->
+        <section id="story">
+            <h2>My Story</h2>
+
+            <p>My path in software developing started on my third year studies at the Oulu Business School. 
+                I was struggling with my statistical programming classes and I wanted to get better. 
+                So, I enrolled to a Python course, where I learned the very basics of programming. 
+                From the very first steps of printing ”hello world” to the console, I was immediately hooked 
+                on programming.
+            </p>
+
+            <p>During my studies, I got more and more interested about programming than my studies at the business school. 
+                After graduation, I had an empty feeling about my future career: should I continue my previous path in sales 
+                or should I continue my journey in programming. It was then when I resigned from my sales agent job when I found 
+                the miracle of web-development. 
+            </p>
+
+            <p>My previous experience in programming was limited to only data-analysis and scientific computing. 
+                After founding the joy of web development, I enrolled to a front-end development course on Codecademy 
+                and started getting a grasp of modern web development. Only in a matter of month, I was already acing 
+                the web development fundamentals and my skills got better day by day. At the moment, I am at the point 
+                where nothing is impossible and I am eager to gain more experience in the world of modern web development.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div id="skill-container">
+                <div class="skill">
+                    <img id="data-analysis-icon" src="./img/data.svg">
+                    <h3>Data Analyst</h3>
+                    <p>From data cleaning to data visualization, I deliver 
+                        valuable insights about complex data.
+                    </p>
+                    <h4>My favorite tools</h4>  
+                    <p>R, Python, SQL</p>
+                </div>
+                <div class="skill">
+                    <img id="dev-icon" src="./img/dev.svg">
+                    <h3>Full Stack Developer</h3>
+                    <p>I love building things from scratch and enjoy
+                        creating user-friendly applications for the all demanding
+                        end users.
+                    </p>
+                    <h4>Technologies I use</h4>
+                    <p>JavaScript, React, Node.js/Express, Git</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Here are some recent projects that I have created.</p>
+            <div id="project-container">
+                <div class="project">
+                    <h3>Job Board</h3>
+                    <a href="https://evening-headland-38843.herokuapp.com/" target="_blank" class="button-view button">Visit website ></a>
+                </div>
+                <div class="project">
+                    <h3>weatherApp</h3>
+                    <a href="https://afternoon-coast-30164.herokuapp.com/" target="_blank" class="button-view button">Visit website ></a>
+                </div>
+                <div class="project">  
+                    <h3>alpha_vantage_tools</h3>  
+                    <a href="https://github.com/eenaveis/alpha_vantage_tools" target="_blank" class="button-view button">@GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>WHO Tuberculosis Data</h3>
+                    <a href="notebooks/tuberculosis.html" target="_blank" class="button-view button">View notebook ></a>
+                </div>
+            </div>
+            <a href="https://github.com/eenaveis" target="_blank" class="button-secondary button">See more on GitHub</a>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <p>Feel free to contact me on LinkedIn and follow me on GitHub!</p>
+                <a href="https://fi.linkedin.com/in/sievanen" target="_blank"><img id="linkedin-logo" class="contact-logo" src="img/logos/LI-Logo.png"></a>
+                <a href="https://github.com/eenaveis" target="_blank"><img id="github-logo" class="contact-logo" src="img/logos/GitHub_Logo_White.png"></a>
+            </div>
+        </section>
     </body>
 
 </html>

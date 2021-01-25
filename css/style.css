@@ -1,212 +1,255 @@
-/* 
-GLOBAL STYLES*/
+/*
+SQL icon made by https://www.freepik.com from https://www.flaticon.com/
+*/
+
+
+/*==============================================================================
+Global Styles*/
+
 * {
-    font-family: Helvetica, sans-serif;
-    color: rgb(249, 220, 92);
-}
-
-p {
-    font-family: Courier, monospace, serif;
-    font-size: 25px;
-    color: rgb(70, 83, 98);
-}
-
-ul {
-    font-size: 25px;
-    display: inline-block;
-    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 3.125rem;
+    color: midnightblue;
 }
 
 h2 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 2.125rem;
+    color: midnightblue;
 }
 
 h3 {
-    font-size: 30px;
-    color: rgb(237, 37, 78);
+    color: midnightblue;
+    font-size: 1.65rem;
 }
 
 h4 {
-    font-size: 25px;
-    text-align: left;
+    font-size: 1.25rem;
 }
 
-/* 
-LINK STYLES*/
+p {
+    font-size: 1.25rem;
+    font-family: Montserrat, sans-serif;
+    color: darkslateblue;
+    margin-top: 25px;
+}
+
+.button {
+    border-radius: 30px;
+    border: 2px solid darkslateblue;
+    transition: 0.5s
+}
+
+.button:hover {
+    color: white;
+    background-color: darkslateblue;
+}
 
 a {
     text-decoration: none;
 }
-#personal-information a {
-    color: rgb(237, 37, 78);
-}
 
-#personal-information a:hover {
-    color: rgb(70, 83, 98);
-}
+/*==============================================================================
+Header Styles*/
 
-a:hover {
-    color: rgb(70, 83, 98);
-    text-decoration: underline;
-}
-
-.github {
-    font-size: 20px;
-    color: rgb(237, 37, 78);
-}
-
-/* 
-HEADER STYLES*/
-#self-portrait {
-    border-radius: 50%;
-    position: relative;
-    top: 15px;
-    width: 125px;
-    height: 125px;
-}
-
-.header {
-    font-size: 50px;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
     width: 100%;
-    background-color: rgb(1, 25, 54);
+    background-color: white;
 }
 
-/* 
-MAIN CONTENT STYLES*/
-#main-content {
-    margin-top: 200px;
+header li {
+    display: inline;
+    padding: 25px;
 }
+
+header a {
+    font-size: 1.65rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: midnightblue;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*==============================================================================
+Container Styles*/
 
 section {
-    border-style: solid;
-    border-radius: 50px;
-    width: 75%;
-    padding: 25px;
-    margin: auto;
-
+    padding: 100px 300px;
 }
 
-body {
-    background-color: rgb(1, 25, 54);
+#main-image {
+    height: 750px;
+    background-image: url("../img/laptop.jpg");
+    background-size: cover;
 }
 
-#personal-information {
-    display: block;
-    text-align: left;
+#intro {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#intro, #story, #projects {
+    background-color: white;
 }
 
 #skills {
-    text-align: center;
+    background: linear-gradient(to top, white 50%, darkslateblue 50%);
 }
 
-.project-container {
+#skill-container {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#projects {
+    padding: 100px 100px;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
-/*
-COMPONENT STYLES*/
-.project-container h3 {
-    margin-bottom: 0;
+#contact {
+    background-color: darkslateblue;
+    margin: 0 auto;
+    color: white;
 }
 
-.project-container h4 {
+/*==============================================================================
+Component Styles*/
+
+#contact-link {
+    padding-right: 25px;
+}
+
+#motivational {
+    padding-top: 60px;
+}
+
+#motivational h1 {
+    font-family: "Roboto Condensed", serif;
+    font-size: 4rem;
+    color: white;
+}
+#portrait {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid darkslateblue;
+}
+
+#intro h2 {
+    margin-top: 100px;
+}
+
+#data-analysis-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#dev-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#skills h2 {
+    color: white;
+}
+
+#skills h4 {
     margin-top: 25px;
-    margin-bottom: 0;
+    color: blueviolet;
 }
 
-.project-container p {
-    margin-top: 5px;
+.skill {
+    padding: 20px;
 }
 
-/* 
-FOOTER STYLES*/
-footer {
-    display: none;
-    margin-left: 25%;
-}
-
-footer a {
-    padding: 10px;
-    color: rgb(237, 37, 78);
-}
-
-#skills-wrapper {
+.project {
+    margin-top: 25px;
+    width: 365px;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: 1s;
+    background-color: darkslateblue;
 }
 
-/*
-MOBILE DEVICES*/
+.project h3 {
+    color: white;
+}
 
-@media only screen and (max-width: 600px) {
-    /*
-    GLOBAL STYLES*/
-    p {
-        font-size: 16px;
-        color: rgb(160, 165, 170);
-    }
+.project:hover {
+    background-color: midnightblue;
+}
 
-    h2 {
-        font-size: 40px;
-    }
+.button-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: midnightblue;
+}
 
-    h3 {
-        font-size: 20px;
-    }
+.button-secondary {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    color: darkslateblue;
+    font-size: 1.25rem;
+    background-color: white;
+}
 
-    h4 {
-        font-size: 15px;
-    }
+.contact-logo {
+    margin-top: 50px;
+    margin-left: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    /* 
-    MAIN CONTENT*/
-    #main-content {
-        margin-top: 0;
-    }
+#contact p {
+    color: white;
+}
 
-    #personal-information {
-        display: none;
-    }
+#linkedin-logo {
+    background-color: white;
+}
 
-    section {
-        max-width: 100%;
-    }
-    
-    /* 
-    HEADER*/
-    .header {
-        font-size: 25px;
-        margin-top: 0;
-        padding-top: 0;
-        position: static;
-    }
-
-    .header img {
-        display: block;
-        margin: 0 auto;
-        padding: 30px;
-    }
-
-    /* 
-    COMPONENT STYLES*/
-    .github {
-        font-size: 12px;
-    }
-    /* 
-    FOOTER*/
-    footer {
-        display: inline;
-    }
-
+#github-logo {
+    background-color: black;
 }
