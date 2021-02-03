@@ -384,7 +384,7 @@ summary {
 <p>In this demonstration, we will go through some big data manipulation and profiling. We explore the IMDB database that is available at the <a href="https://datasets.imdbws.com/">IMDB website</a>. Just download the three datasets: “title.akas”, “title.basics” and “title.ratings” and you are good to go. We will combine these datasets into one large table with a total size of 1.9 Gb, so it might take some time to load these datasets. The full source code for this notebook is available at <a href="https://github.com/eenaveis/imdb-r">GitHub</a>.</p>
 </div>
 <div id="data-preparation" class="section level1">
-<h1>Data preparation</h1>
+<h1>Data Preparation</h1>
 <p>We start with loading the three datasets into our program and restrict the data to contain only U.S. movies.</p>
 <pre class="r"><code>title_akas &lt;- read_tsv(&quot;title.akas.tsv&quot;, na = c(&quot;&quot;, &quot;\\N&quot;))
 
@@ -433,7 +433,7 @@ rm(title_basics)
 rm(title_ratings)</code></pre>
 </div>
 <div id="exploratory-analysis" class="section level1">
-<h1>Exploratory analysis</h1>
+<h1>Exploratory Analysis</h1>
 <p>Lets find out which movie is the oldest in this database:</p>
 <pre class="r"><code>imdb %&gt;%
   filter(startYear == min(startYear, na.rm = TRUE))</code></pre>
